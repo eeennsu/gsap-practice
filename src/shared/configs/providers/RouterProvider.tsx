@@ -4,6 +4,7 @@ import {
   RouterProvider as ReactRouterProvider,
 } from 'react-router-dom';
 
+import GsapFromPage from '@pages/gsap/from';
 import GsapToPage from '@pages/gsap/to';
 import HomePage from '@pages/home';
 
@@ -21,6 +22,10 @@ const routerArray: RouteObject[] = [
       {
         path: '/gsapto',
         element: <GsapToPage />,
+      },
+      {
+        path: '/gsapfrom',
+        element: <GsapFromPage />,
       },
     ],
   },
