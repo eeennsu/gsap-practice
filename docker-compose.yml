@@ -1,16 +1,15 @@
 services:
   vite-react-template:
-    image: 634497641520.dkr.ecr.ap-northeast-2.amazonaws.com/vite-react-template:development-latest
-    container_name: vite-react-template-web
+    build: .
     ports:
       - '5173:5173'
-    # volumes:
-    #   - .:/app
+    volumes:
+      - .:/app
     restart: 'always'
-    # stdin_open: true
+    stdin_open: true
+    tty: true
     # env_file:
     #   - .env
-    # tty: true
     # healthcheck:
     #   test: ['CMD', 'wget', '-qO-', 'http://localhost:5173']
     #   interval: 30s

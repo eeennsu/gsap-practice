@@ -115,6 +115,34 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-zinc-900 text-white;
+  }
+}
+
+@layer components {
+  code {
+    @apply bg-zinc-900 p-1 font-mono text-sm text-orange-400;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-zinc-50;
+  }
+
+  main {
+    @apply mx-auto min-h-screen max-w-3xl bg-zinc-900 p-10 ring-1 ring-zinc-300/20 xl:max-w-5xl;
+  }
+
+  a {
+    @apply text-blue-400 hover:text-blue-500;
+  }
+
+  button {
+    @apply rounded-md bg-slate-500 px-4 py-2 text-zinc-50 hover:bg-slate-600;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto min-h-screen max-w-3xl p-10 ring-1 ring-zinc-300/20 xl:max-w-5xl;
   }
 }
