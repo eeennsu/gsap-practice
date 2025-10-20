@@ -6,6 +6,10 @@ import {
 
 import GsapFromPage from '@pages/gsap/from';
 import GsapFromToPage from '@pages/gsap/fromto';
+import GsapScrollTriggerPage from '@pages/gsap/scrollTrigger';
+import GsapStaggerPage from '@pages/gsap/stagger';
+import GsapTextPage from '@pages/gsap/text';
+import GsapTimelinePage from '@pages/gsap/timeline';
 import GsapToPage from '@pages/gsap/to';
 import HomePage from '@pages/home';
 
@@ -21,16 +25,32 @@ const routerArray: RouteObject[] = [
         element: <HomePage />,
       },
       {
-        path: '/gsapto',
+        path: '/gsap-to',
         element: <GsapToPage />,
       },
       {
-        path: '/gsapfrom',
+        path: '/gsap-from',
         element: <GsapFromPage />,
       },
       {
-        path: '/gsapfromto',
+        path: '/gsap-fromto',
         element: <GsapFromToPage />,
+      },
+      {
+        path: '/gsap-timeline',
+        element: <GsapTimelinePage />,
+      },
+      {
+        path: '/gsap-stagger',
+        element: <GsapStaggerPage />,
+      },
+      {
+        path: '/gsap-scrolltrigger',
+        element: <GsapScrollTriggerPage />,
+      },
+      {
+        path: '/gsap-text',
+        element: <GsapTextPage />,
       },
     ],
   },

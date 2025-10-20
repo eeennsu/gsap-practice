@@ -5,41 +5,41 @@ const animations = [
     title: 'GSAP To',
     description:
       'The to() method is used to animate a single element from a starting state to an ending state.',
-    path: '/gsapto',
+    path: '/gsap-to',
   },
   {
     title: 'GSAP From',
     description:
       'The from() method is used to animate a single element from an ending state to a starting state.',
-    path: '/gsapfrom',
+    path: '/gsap-from',
   },
   {
     title: 'GSAP FromTo',
     description:
       'The fromTo() method is used to animate a single element from a starting state to an ending state and vice versa.',
-    path: '/gsapfromto',
+    path: '/gsap-fromto',
   },
   {
     title: 'GSAP Timeline',
     description:
       'The timeline() method is used to create a timeline to manage multiple animations.',
-    path: '/gsaptimeline',
+    path: '/gsap-timeline',
   },
   {
     title: 'GSAP Stagger',
     description: 'The stagger() method is used to animate multiple elements with a stagger effect.',
-    path: '/gsapstagger',
+    path: '/gsap-stagger',
   },
   {
     title: 'GSAP ScrollTrigger',
     description:
       'The ScrollTrigger plugin is used to trigger animations based on the scroll position.',
-    path: '/gsapscrolltrigger',
+    path: '/gsap-scrolltrigger',
   },
   {
     title: 'GSAP Text',
     description: 'Learn how to animate text with GSAP.',
-    path: '/gsaptext',
+    path: '/gsap-text',
   },
 ];
 
