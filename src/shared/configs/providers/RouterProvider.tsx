@@ -1,9 +1,11 @@
 import {
   createBrowserRouter,
+  Outlet,
   RouteObject,
   RouterProvider as ReactRouterProvider,
 } from 'react-router-dom';
 
+import GsapHomePage from '@pages/gsap';
 import GsapFromPage from '@pages/gsap/from';
 import GsapFromToPage from '@pages/gsap/fromto';
 import GsapScrollTriggerPage from '@pages/gsap/scrollTrigger';
@@ -21,36 +23,46 @@ const routerArray: RouteObject[] = [
     element: <AppLayout />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <HomePage />,
       },
       {
-        path: '/gsap-to',
-        element: <GsapToPage />,
-      },
-      {
-        path: '/gsap-from',
-        element: <GsapFromPage />,
-      },
-      {
-        path: '/gsap-fromto',
-        element: <GsapFromToPage />,
-      },
-      {
-        path: '/gsap-timeline',
-        element: <GsapTimelinePage />,
-      },
-      {
-        path: '/gsap-stagger',
-        element: <GsapStaggerPage />,
-      },
-      {
-        path: '/gsap-scrolltrigger',
-        element: <GsapScrollTriggerPage />,
-      },
-      {
-        path: '/gsap-text',
-        element: <GsapTextPage />,
+        path: 'gsap',
+        element: <Outlet />,
+        children: [
+          {
+            index: true,
+            element: <GsapHomePage />,
+          },
+          {
+            path: 'to',
+            element: <GsapToPage />,
+          },
+          {
+            path: 'from',
+            element: <GsapFromPage />,
+          },
+          {
+            path: 'fromto',
+            element: <GsapFromToPage />,
+          },
+          {
+            path: 'timeline',
+            element: <GsapTimelinePage />,
+          },
+          {
+            path: 'stagger',
+            element: <GsapStaggerPage />,
+          },
+          {
+            path: 'scrolltrigger',
+            element: <GsapScrollTriggerPage />,
+          },
+          {
+            path: 'text',
+            element: <GsapTextPage />,
+          },
+        ],
       },
     ],
   },

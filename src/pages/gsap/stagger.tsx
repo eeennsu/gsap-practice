@@ -12,11 +12,11 @@ const GsapStaggerPage: FC = () => {
       repeat: -1,
       rotation: 360,
       stagger: {
-        amount: 1.5,
-        grid: [2, 1],
-        axis: 'y',
+        amount: 1.5, // 요소 시작 간격
+        grid: [2, 1], // 2행 1열 배치
+        axis: 'y', // y축 기준 순서
         ease: 'circ.inOut',
-        from: 'random',
+        from: 'random', // 무작위 시작
       },
     });
   });

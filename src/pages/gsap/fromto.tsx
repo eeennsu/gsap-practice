@@ -4,6 +4,7 @@ import type { FC } from 'react';
 
 const GsapFromToPage: FC = () => {
   useGSAP(() => {
+    // 시작상태와 끝 상태를 명확하게 지정해줌
     gsap.fromTo(
       '#red-box',
       {

@@ -6,6 +6,9 @@ const GsapToPage: FC = () => {
   const blueBoxRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
+    // 현재 상태에서 목표 상태로
+    // 현재 DOM 스타일을 읽음
+    // 자연스러운 결과로 향하는 애니메이션 구현할 때
     gsap.to(blueBoxRef.current, {
       x: 250,
       repeat: -1, // 반복 횟수

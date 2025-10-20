@@ -6,6 +6,9 @@ const GsapFromPage: FC = () => {
   const greenBoxRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
+    // 초기상태에서 현재상태로
+    // 현재 스타일로 돌아감
+    // 등장 애니메이션 구현할 때 (진입, 페이드 등)
     gsap.from(greenBoxRef.current, {
       x: 250,
       repeat: -1, // 반복 횟수 (-1은 무한 반복)
