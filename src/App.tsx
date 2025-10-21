@@ -5,7 +5,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 
 import ErrorPage from '@pages/error';
 
-import './globals.css';
+import './index.css';
 
 const App: FC = () => {
   return (
