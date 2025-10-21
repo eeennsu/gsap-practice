@@ -22,6 +22,7 @@ const GsapScrollTriggerPage: FC = () => {
           scale: 1.5,
           scrollTrigger: {
             trigger: box,
+            // start와 end에 들어가는 것은 <triggerPosition> <viewportPosition>
             start: 'bottom, bottom', // 상자의 바닥이 뷰포트에 닿으면 시작
             end: 'top 20%', // 상자가 탑의 20%가 되면 종료,
             scrub: true, // 부드러워짐

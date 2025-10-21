@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import { ScrollTrigger, SplitText } from 'gsap/all';
 import type { FC } from 'react';
 
+import Hero from '@features/home/ui/Hero';
 // import Contact from '@features/home/ui/Contact';
 // import Menu from '@features/home/ui/Menu';
 // import About from '@features/home/ui/About';
@@ -16,8 +17,9 @@ const HomePage: FC = () => {
   return (
     <main>
       <Navbar />
-      {/* <Hero />
-      <Cocktails />
+      <Hero />
+
+      {/* <Cocktails />
       <About />
       <Art />
       <Menu />

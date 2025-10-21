@@ -5,21 +5,28 @@ import type { FC } from 'react';
 import { navLinks } from '@entities/home/consts';
 
 const Navbar: FC = () => {
+  const NAV_KEY = 'nav';
+
   useGSAP(() => {
     const navTween = gsap.timeline({
       scrollTrigger: {
-        trigger: 'nav',
+        trigger: NAV_KEY,
         start: 'bottom top',
+
+        scrub: true,
+        markers: true,
       },
     });
 
     navTween.fromTo(
-      'nav',
-      { backgroundColor: 'transparent' },
+      NAV_KEY,
       {
-        backgroundColor: '#00000050',
-        backgroundFilter: 'blur(10px)',
-        duration: 1,
+        backgroundColor: 'transparent',
+      },
+      {
+        backgroundColor: 'rgba(255, 255, 255, 0.01)', // 유리 반투명
+        backdropFilter: 'blur(10px)', // 배경 블러
+        duration: 2,
         ease: 'power1.inOut',
       },
     );
