@@ -114,8 +114,8 @@ const Hero: FC = () => {
         trigger: 'video',
         start: isMobile ? 'top 50%' : 'center 60%', // 데스크탑 : 비디오 중앙이 닿는 순간 스타트 / 모바일 : 비디오 상단이 닿는 순간 스타트
         end: isMobile ? '120% top' : 'bottom top', // 데스크탑 : 비디오 하단이 닿을 때 end / 모바일 : 비디오 상단이 완전히 지나가고 20% 더 스크롤했을 때 end
-        scrub: true, // 스크롤 위치와 애니메이션 진행 정도를 동기화 시켜줌 (내릴 때 재생, 올릴 때 역재생)
-        pin: true,
+        scrub: true, // 스크롤 위치와 애니메이션 진행 정도를 동기화 시켜줌 (내릴 때 재생, 올릴 때 역재생), 또한 scrub 기반 애니메이션의 경우 모든 프레임이 키 프레임이어야 함
+        pin: true, // 요소를 화면에 고정하는 기능. 섹션이 멈춘 것처럼 보이면서 내부 애니메이션만 진행되는지 알 수 있음. (css fixed, end 지점 도달시 fixed 해제)
       },
     });
 
@@ -164,6 +164,7 @@ const Hero: FC = () => {
       </section>
 
       <div className='video absolute inset-0'>
+        {/* playsInline는 비디오가 자동으로 전체화면으로 전환되는 것을 막고, 페이지 내에서 자연스럽게 재생되도록 해주는 속성 */}
         <video ref={videoRef} muted playsInline preload='auto' src='/videos/output.mp4' />
       </div>
     </>

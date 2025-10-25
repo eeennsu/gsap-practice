@@ -200,7 +200,7 @@ body {
           @apply flex flex-col justify-between gap-5 md:gap-2;
 
           span {
-            @apply text-yellow text-5xl font-bold;
+            @apply text-yellow inline-block text-5xl font-bold;
           }
         }
       }
