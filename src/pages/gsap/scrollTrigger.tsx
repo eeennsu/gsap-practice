@@ -5,6 +5,15 @@ import { useRef, type FC } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
+/*
+  top top 은 top 0%와 같음 (요소의 상단이 뷰포트의 상단에 닿을 때)
+  만약 80% 라고 한다면, 화면 아래쪽 근처임 (%는 위에서부터 채워짐)
+
+  "triggerPoint viewportPoint"
+  - triggerPoint	트리거 요소의 위치 (예: top, center, bottom, 10%, 100px 등)
+  - viewportPoint	뷰포트(화면)의 위치 (예: top, center, bottom, 20%, 80% 등)
+*/
+
 const GsapScrollTriggerPage: FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 

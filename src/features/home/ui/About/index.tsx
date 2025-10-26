@@ -13,7 +13,7 @@ const About: FC = () => {
       },
       scrollTrigger: {
         trigger: '#about',
-        start: 'top center',
+        start: 'top 60%',
       },
     });
 
