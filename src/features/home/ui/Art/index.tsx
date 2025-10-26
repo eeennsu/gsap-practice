@@ -16,7 +16,7 @@ const Art: FC = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#art',
-        start: isMobile ? 'top 20%' : 'top top',
+        start: isMobile ? 'top 15%' : 'top top',
         end: 'bottom center',
         scrub: 1.7, // 스크롤 제어가 부드러워짐. 애니메이션이 스크롤을 따라가지만 지연이 발생
         pin: true,

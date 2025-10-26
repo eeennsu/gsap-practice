@@ -2,13 +2,12 @@ import gsap from 'gsap';
 import { ScrollTrigger, SplitText } from 'gsap/all';
 import type { FC } from 'react';
 
-// import Contact from '@features/home/ui/Contact';
-// import Menu from '@features/home/ui/Menu';
 import About from '@features/home/ui/About';
 import Art from '@features/home/ui/Art';
 import Cocktails from '@features/home/ui/Cocktails';
+import Contact from '@features/home/ui/Contact';
 import Hero from '@features/home/ui/Hero';
-// import Hero from '@features/home/ui/Hero';
+import Menu from '@features/home/ui/Menu';
 import Navbar from '@features/home/ui/Navbar';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -21,9 +20,8 @@ const HomePage: FC = () => {
       <Cocktails />
       <About />
       <Art />
-      <div className='h-dvh' />
-      {/*<Menu />
-      <Contact /> */}
+      <Menu />
+      <Contact />
     </main>
   );
 };
