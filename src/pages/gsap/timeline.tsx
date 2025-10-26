@@ -32,7 +32,7 @@ const GsapTimelinePage: FC = () => {
         borderRadius: '8px',
         duration: 2,
         ease: 'back.inOut',
-      })
+      });
   });
 
   const handleClick = () => {
