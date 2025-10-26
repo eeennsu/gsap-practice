@@ -12,9 +12,7 @@ const Navbar: FC = () => {
       scrollTrigger: {
         trigger: NAV_KEY,
         start: 'bottom top',
-
         scrub: true,
-        markers: true,
       },
     });
 
